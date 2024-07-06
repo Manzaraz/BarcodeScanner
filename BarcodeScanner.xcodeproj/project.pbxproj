@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		61C061382C39D8E100050DE8 /* BarcodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C061372C39D8E100050DE8 /* BarcodeScannerApp.swift */; };
-		61C0613A2C39D8E100050DE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C061392C39D8E100050DE8 /* ContentView.swift */; };
+		61C0613A2C39D8E100050DE8 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C061392C39D8E100050DE8 /* BarcodeScannerView.swift */; };
 		61C0613C2C39D8E200050DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C0613B2C39D8E200050DE8 /* Assets.xcassets */; };
 		61C0613F2C39D8E200050DE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C0613E2C39D8E200050DE8 /* Preview Assets.xcassets */; };
+		61C061472C39E0C000050DE8 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C061462C39E0C000050DE8 /* ScannerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		61C061342C39D8E100050DE8 /* BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C061372C39D8E100050DE8 /* BarcodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerApp.swift; sourceTree = "<group>"; };
-		61C061392C39D8E100050DE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		61C061392C39D8E100050DE8 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
 		61C0613B2C39D8E200050DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61C0613E2C39D8E200050DE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		61C061452C39DF4200050DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		61C061462C39E0C000050DE8 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		61C061362C39D8E100050DE8 /* BarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				61C061452C39DF4200050DE8 /* Info.plist */,
 				61C061372C39D8E100050DE8 /* BarcodeScannerApp.swift */,
-				61C061392C39D8E100050DE8 /* ContentView.swift */,
+				61C061392C39D8E100050DE8 /* BarcodeScannerView.swift */,
+				61C061462C39E0C000050DE8 /* ScannerVC.swift */,
 				61C0613B2C39D8E200050DE8 /* Assets.xcassets */,
 				61C0613D2C39D8E200050DE8 /* Preview Content */,
 			);
@@ -137,7 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61C0613A2C39D8E100050DE8 /* ContentView.swift in Sources */,
+				61C061472C39E0C000050DE8 /* ScannerVC.swift in Sources */,
+				61C0613A2C39D8E100050DE8 /* BarcodeScannerView.swift in Sources */,
 				61C061382C39D8E100050DE8 /* BarcodeScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +281,7 @@
 				DEVELOPMENT_TEAM = 4FXJ5W7FM5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BarcodeScanner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +311,7 @@
 				DEVELOPMENT_TEAM = 4FXJ5W7FM5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BarcodeScanner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
